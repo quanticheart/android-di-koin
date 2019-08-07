@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/not_have_tasks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:paddingBottom="80dp"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </ViewFlipper>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_plus"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin_right"
+            android:src="@drawable/ic_refresh"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCleah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin_rigth_max"
+            android:src="@drawable/ic_delete"/>
+
+    <ImageView
+            android:id="@+id/img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/img_rigth_margin"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
