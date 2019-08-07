@@ -18,6 +18,7 @@ abstract class BaseActivity : AppCompatActivity() {
      *
      * @see MyApplication.kt
      * @link https://android.jlelse.eu/android-notifications-213004198f2e
+     * @link https://kodein.org/Kodein-DI/?6.3/android#_view_models
      */
 
     //
