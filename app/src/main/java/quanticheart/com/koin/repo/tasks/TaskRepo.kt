@@ -1,4 +1,4 @@
-package quanticheart.com.kodein.repo.tasks
+package quanticheart.com.koin.repo.tasks
 
 interface TaskRepo {
 

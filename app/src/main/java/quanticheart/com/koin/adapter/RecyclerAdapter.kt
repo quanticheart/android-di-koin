@@ -1,15 +1,14 @@
-package quanticheart.com.kodein.adapter
+package quanticheart.com.koin.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_list.view.*
-import quanticheart.com.kodein.R
+import quanticheart.com.koin.R
 
-class RecyclerAdapter(context: Context, recyclerView: RecyclerView) : RecyclerView.Adapter<RecyclerAdapter.Holder>() {
+class RecyclerAdapter(recyclerView: RecyclerView) : RecyclerView.Adapter<RecyclerAdapter.Holder>() {
 
     init {
         recyclerView.apply {

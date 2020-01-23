@@ -1,4 +1,4 @@
-package quanticheart.com.kodein.repo.fakeRepo
+package quanticheart.com.koin.repo.fakeRepo
 
 interface FakeRepo {
 

@@ -1,4 +1,4 @@
-package quanticheart.com.kodein.repo.images
+package quanticheart.com.koin.repo.images
 
 import android.graphics.Bitmap
 

@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "quanticheart.com.kodein"
+        applicationId "quanticheart.com.koin"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
@@ -23,10 +23,14 @@ android {
 }
 
 dependencies {
-    implementation 'org.kodein.di:kodein-di-generic-jvm:6.3.3'
-//    implementation 'org.kodein.di:kodein-di-framework-android-x:6.3.3' // For Barebone
-//    implementation 'org.kodein.di:kodein-di-framework-android-x:6.3.3' // For Android + Support library
-    implementation 'org.kodein.di:kodein-di-framework-android-x:6.3.3' // For Android + AndroidX library
+// Koin for Android
+    implementation "org.koin:koin-android:2.0.1"
+
+//// Koin Android Scope feature
+    implementation "org.koin:koin-android-scope:2.0.1"
+//
+//// Koin Android ViewModel feature
+    implementation "org.koin:koin-android-viewmodel:2.0.1"
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
