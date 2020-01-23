@@ -1,5 +1,6 @@
 package quanticheart.com.koin.base
 
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import org.koin.android.viewmodel.ext.android.getViewModel
@@ -18,6 +19,7 @@ abstract class BaseActivity<T : ViewModel> : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        Log.w("RESUME BASE", "CALL")
         this.thisViewModel(viewModel)
     }
 

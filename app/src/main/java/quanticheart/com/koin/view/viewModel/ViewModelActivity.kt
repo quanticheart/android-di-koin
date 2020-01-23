@@ -1,6 +1,7 @@
 package quanticheart.com.koin.view.viewModel
 
 import android.os.Bundle
+import android.util.Log
 import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -72,5 +73,10 @@ class ViewModelActivity : BaseActivity<ViewModelRepoTask>() {
 
     private fun showMsg() {
         flipper.displayedChild = 0
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.w("RESUME ACTIVITY", "CALL")
     }
 }
